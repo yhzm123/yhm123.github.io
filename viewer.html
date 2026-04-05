@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF 在线预览</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF 预览</title>
   <style>
-    * {margin: 0;padding: 0;box-sizing: border-box;}
-    html, body {height: 100vh;width: 100vw;overflow: hidden;background: #fff;}
-    iframe {width: 100%;height: 100%;border: none;}
+    * {margin:0;padding:0;border:0;width:100vw;height:100vh;overflow:hidden;background:#fff}
   </style>
 </head>
 <body>
-  <!-- 用绝对路径直接加载你的PDF，100%不会错 -->
-  <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://yhm123.github.io/test.pdf"></iframe>
+  <!-- 最简单的方式，直接跳转打开PDF -->
+  <script>
+    window.location.href = "test.pdf";
+  </script>
 </body>
 </html>
